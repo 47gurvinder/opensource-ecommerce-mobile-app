@@ -19,7 +19,6 @@ export 'package:bagisto_app_demo/screens/home_page/utils/route_argument_helper.d
 export 'package:bagisto_app_demo/widgets/image_view.dart';
 export 'package:bagisto_app_demo/utils/status_color_helper.dart';
 export 'package:collection/collection.dart';
-export 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 export 'dart:async';
 export 'package:bagisto_app_demo/utils/no_data_found_widget.dart';
 export 'package:bagisto_app_demo/screens/review/bloc/review_repo.dart';

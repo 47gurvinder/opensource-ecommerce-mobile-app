@@ -185,7 +185,7 @@ class _CheckboxGroupState extends State<CheckboxGroup> {
         try {
 
           final cookieManager = CookieManager.instance();
-          final cookies = await cookieManager.getCookies(url: (Uri.parse(url)));
+          final cookies = await cookieManager.getCookies(url: WebUri.uri(Uri.parse(url)));
           final cookieHeader = cookies.map((cookie) => "${cookie.name}=${cookie.value}").join("; ");
           final directory = Platform.isIOS
               ? await getApplicationDocumentsDirectory()

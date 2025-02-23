@@ -235,8 +235,7 @@ class _LocationScreenState extends State<LocationScreen> {
 
   void getLocation(LatLng latLng) async {
     List<Placemark> placeMarks = await placemarkFromCoordinates(
-        latLng.latitude, latLng.longitude,
-        localeIdentifier: GlobalData.locale);
+        latLng.latitude, latLng.longitude,);
     setState(() {
       if ((placeMarks.first.street ?? '') != '') {
         address += '${placeMarks.first.street}, ';

@@ -9,9 +9,8 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import '../utils/app_constants.dart';
-
+import  'package:bagisto_app_demo/html_widget.dart';
 
 class PriceWidgetHtml extends StatelessWidget {
   final String priceHtml;
@@ -23,8 +22,7 @@ class PriceWidgetHtml extends StatelessWidget {
       padding: const EdgeInsets.all(AppSizes.spacingNormal),
       child: HtmlWidget(
         priceHtml,
-
-        customStylesBuilder: (element) {
+      /*  customStylesBuilder: (element) {
           if (element.classes.contains('line-through')) {
             return {'text-decoration': 'line-through'};
           }
@@ -44,7 +42,7 @@ class PriceWidgetHtml extends StatelessWidget {
             return {'flex' : '1'};
           }
           return null;
-        },
+        },*/
       ),
     );
   }

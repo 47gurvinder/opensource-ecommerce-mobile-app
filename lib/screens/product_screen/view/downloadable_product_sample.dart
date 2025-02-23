@@ -30,7 +30,7 @@ class DownloadProductSample extends StatefulWidget {
 }
 
 class _DownloadProductSampleState extends State<DownloadProductSample> {
-  final buttonCarouselController = CarouselController();
+  final buttonCarouselController = CarouselSliderController();
   ProductScreenBLoc? productScreenBLoc;
   var loadData = 0.0;
   bool showLoader = false;
@@ -126,7 +126,7 @@ class _DownloadProductSampleState extends State<DownloadProductSample> {
         try {
 
           final cookieManager = CookieManager.instance();
-          final cookies = await cookieManager.getCookies(url: (Uri.parse(url)));
+          final cookies = await cookieManager.getCookies(url: WebUri.uri(Uri.parse(url)));
           final cookieHeader = cookies.map((cookie) => "${cookie.name}=${cookie.value}").join("; ");
           final directory = Platform.isIOS
               ? await getApplicationDocumentsDirectory()

@@ -11,8 +11,8 @@
 
 import 'package:bagisto_app_demo/utils/app_constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import '../../../widgets/image_view.dart';
+import  'package:bagisto_app_demo/html_widget.dart';
 
 class DetailsBannerView extends StatelessWidget {
   final String? title;

@@ -13,7 +13,7 @@
 
 
 import 'package:bagisto_app_demo/screens/compare/utils/index.dart';
-
+import  'package:bagisto_app_demo/html_widget.dart';
 class CompareView extends StatelessWidget {
   final CompareProductsData compareScreenModel;
   final CompareScreenBloc? compareScreenBloc;

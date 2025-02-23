@@ -324,7 +324,7 @@ class _SearchScreenState extends State<SearchScreen>
   }
 
   static Future<bool> connectedToNetwork() async {
-    bool result = await InternetConnectionChecker().hasConnection;
+    bool result = await InternetConnectionChecker.createInstance().hasConnection;
     return result;
   }
 }

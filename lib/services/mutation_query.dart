@@ -40,13 +40,7 @@ class MutationsData {
         localeId
         createdAt
         updatedAt
-        filterableAttributes {
-            id
-            adminName
-            code
-            type
-            position
-        }
+      
         children {
             id
             name
@@ -94,13 +88,7 @@ class MutationsData {
         localeId
         createdAt
         updatedAt
-        filterableAttributes {
-            id
-            adminName
-            code
-            type
-            position
-        }
+        
         children {
             id
             name
@@ -257,31 +245,6 @@ class MutationsData {
               localeId
               createdAt
               updatedAt
-              filterableAttributes {
-                  id
-                  code
-                  adminName
-                  type
-                  validation
-                  position
-                  isFilterable
-                  options {
-                      id
-                      adminName
-                      swatchValue
-                      sortOrder
-                      attributeId
-                      isNew
-                      isDelete
-                      position
-                      translations {
-                          id
-                          locale
-                          label
-                          attributeOptionId
-                      }
-                  }
-              }
              
           }
       }
@@ -353,17 +316,7 @@ class MutationsData {
               layout
               createdAt
               updatedAt
-              translations {
-                  id
-                  urlKey
-                  metaDescription
-                  metaTitle
-                  pageTitle
-                  metaKeywords
-                  htmlContent
-                  locale
-                  cmsPageId
-              }
+           
               channels {
                   id
                   code
@@ -641,17 +594,6 @@ message
         layout
         createdAt
         updatedAt
-        translations {
-          id
-          urlKey
-          metaDescription
-          metaTitle
-          pageTitle
-          metaKeywords
-          htmlContent
-          locale
-          cmsPageId
-        }
         channels {
           id
           code
@@ -716,11 +658,7 @@ message
                     swatchValue
                     sortOrder
                     isNew
-                    translations {
-                        id
-                        label
-                        locale
-                    }
+                 
                 }
             }
             sortOrders {
@@ -889,14 +827,6 @@ message
                         status
                         displayMode
                         parentId
-                        filterableAttributes {
-                            id
-                            adminName
-                            code
-                            type
-                            position
-                        }
-                       
                         createdAt
                         updatedAt
                     }
@@ -975,12 +905,7 @@ message
                         productId
                         createdAt
                         updatedAt
-                        translations {
-                            id
-                            locale
-                            title
-                            productDownloadableSampleId
-                        }
+                      
                     }
                     downloadableLinks {
                         id
@@ -997,12 +922,7 @@ message
                         sortOrder
                         productId
                         downloads
-                        translations {
-                            id
-                            locale
-                            title
-                            productDownloadableLinkId
-                        }
+                       
                     }
                     bundleOptions {
                         id
@@ -1018,12 +938,6 @@ message
                             isDefault
                             productBundleOptionId
                             productId
-                        }
-                        translations {
-                            id
-                            locale
-                            label
-                            productBundleOptionId
                         }
                     }
                     customerGroupPrices {
@@ -1260,14 +1174,7 @@ message
             shareURL
             urlKey
             description
-            additionalData {
-                id
-                code
-                label
-                value
-                admin_name
-                type
-            }
+
             priceHtml {
                 id
                 type
@@ -1292,18 +1199,6 @@ message
             }
             configutableData {
             chooseText
-            attributes {
-                id
-                code
-                label
-                swatchType
-                options {
-                    id
-                    label
-                    swatchType
-                    swatchValue
-                }
-            }
             index {
                 id
                 attributeOptionIds {
@@ -1412,7 +1307,7 @@ message
                     type
                     position
                 }
-                
+
                 createdAt
                 updatedAt
             }
@@ -1472,7 +1367,7 @@ message
                 status
                 productId
                 customerId
-            
+
                 createdAt
                 updatedAt
             }
@@ -1514,12 +1409,7 @@ message
                 productId
                 createdAt
                 updatedAt
-                translations {
-                    id
-                    locale
-                    title
-                    productDownloadableSampleId
-                }
+               
             }
             downloadableLinks {
                 id
@@ -1538,12 +1428,7 @@ message
                 sortOrder
                 productId
                 downloads
-                translations {
-                    id
-                    locale
-                    title
-                    productDownloadableLinkId
-                }
+               
             }
             bundleOptions {
                 id
@@ -1587,12 +1472,7 @@ message
                         }
                 }
                 }
-                translations {
-                    id
-                    locale
-                    label
-                    productBundleOptionId
-                }
+                
             }
             customerGroupPrices {
                 id
@@ -2959,24 +2839,14 @@ message
         id
         code
         name
-        translations {
-            id
-            locale
-            name
-            countryId
-        }
+       
         states {
             id
             countryCode
             code
             defaultName
             countryId
-            translations {
-                id
-                locale
-                defaultName
-                countryStateId
-            }
+          
         }
       }
     }""";

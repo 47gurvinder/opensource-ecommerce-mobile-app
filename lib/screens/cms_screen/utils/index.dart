@@ -12,6 +12,6 @@ export 'package:bagisto_app_demo/screens/cms_screen/bloc/cms_bloc.dart';
 export 'package:bagisto_app_demo/screens/cms_screen/bloc/cms_event.dart';
 export 'package:bagisto_app_demo/screens/cms_screen/bloc/cms_state.dart';
 export 'package:bagisto_app_demo/screens/cms_screen/data_model/cms_details.dart';
-export 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 export  'package:collection/collection.dart';
 export 'package:bagisto_app_demo/screens/cms_screen/bloc/cms_repository.dart';
+export 'package:bagisto_app_demo/html_widget.dart';

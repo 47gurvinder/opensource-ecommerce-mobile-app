@@ -26,7 +26,7 @@ class PushNotificationsManager {
   static const initializationSettingsAndroid =
       AndroidInitializationSettings('@mipmap/ic_launcher');
 
-  static const initializationSettingsIOS = IOSInitializationSettings(
+  static const initializationSettingsIOS = DarwinInitializationSettings(
     requestAlertPermission: true,
     requestBadgePermission: true,
     requestSoundPermission: true,
@@ -41,7 +41,7 @@ class PushNotificationsManager {
       FlutterLocalNotificationsPlugin();
 
   void setUpFirebase(BuildContext context) {
-    flutterLocalNotificationsPlugin.initialize(initializationSettings,
+    /*flutterLocalNotificationsPlugin.initialize(initializationSettings,
         onSelectNotification: (String? payload) async {
       if ((payload ?? "").isNotEmpty) {
         debugPrint("payload ---> $payload");
@@ -50,7 +50,7 @@ class PushNotificationsManager {
           openFile(payloadData["path"].toString());
         }
       }
-    });
+    });*/
     _firebaseCloudMessagingListeners(context);
   }
 
@@ -75,7 +75,7 @@ class PushNotificationsManager {
         playSound: true,
         styleInformation: notificationStyle);
 
-    var iOSPlatformChannelSpecifics = const IOSNotificationDetails(
+    var iOSPlatformChannelSpecifics = const DarwinNotificationDetails(
       presentAlert: true,
       presentSound: true,
       presentBadge: true,

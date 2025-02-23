@@ -9,7 +9,7 @@
  */
 
 import 'package:bagisto_app_demo/screens/cms_screen/utils/index.dart';
-
+import  'package:bagisto_app_demo/html_widget.dart';
 class CmsContent extends StatefulWidget {
   final String? title;
   final int? index;
@@ -89,3 +89,5 @@ class _CmsContentState extends State<CmsContent> {
     );
   }
 }
+
+

@@ -1,0 +1,9 @@
+checkoutSaveAddress
+
+Operation -> Operation(document: DocumentNode("mutation saveCheckoutAddresses {\n  __typename\n  saveCheckoutAddresses(input: {billing: {defaultAddress: false, companyName: \"\", firstName: \"Gurwinder\", lastName: \"Singh\", email: \"47gurvinder@gmail.com\", address: \"1 1\", city: \"kharar\", country: \"IN\", state: \"PB\", postcode: \"140301\", phone: \"9417140709\", useForShipping: true, defaultAddress: false, saveAddress: false}, shipping: {defaultAddress: false, companyName: \"\", firstName: \"Gurwinder\", lastName: \"Singh\", email: \"47gurvinder@gmail.com\", address: \"1 1\", city: \"kharar\", country: \"IN\", state: \"PB\", postcode: \"140301\", phone: \"9417140709\"}}) {\n    __typename\n    message\n    shippingMethods {\n      __typename\n      title\n      methods {\n        __typename\n        code\n        label\n        price\n        formattedPrice\n        basePrice\n        formattedBasePrice\n      }\n    }\n    paymentMethods {\n      __typename\n      method\n      methodTitle\n      description\n      sort\n    }\n    cart {\n      __typename\n      id\n      customerEmail\n      customerFirstName\n      customerLastName\n      shippingMethod\n      couponCode\n      isGift\n      itemsCount\n      itemsQty\n      formattedPrice {\n        __typename\n        grandTotal\n      }\n    }\n    jumpToSection\n  }\n}"), operationName: null)
+
+
+git remote add myRemote git@github.com:47gurvinder/flutter_ecommerce.git
+
+
+git remote rename origin publicRepo

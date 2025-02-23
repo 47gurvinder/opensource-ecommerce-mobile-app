@@ -8,8 +8,8 @@
  *   @link https://store.webkul.com/license.html
  */
 
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:bagisto_app_demo/screens/product_screen/utils/index.dart';
+import  'package:bagisto_app_demo/html_widget.dart';
 
 class AboutProductView extends StatefulWidget {
   final NewProducts? productData;
