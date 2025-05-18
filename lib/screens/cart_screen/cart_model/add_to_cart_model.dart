@@ -10,12 +10,13 @@
 
 import 'package:bagisto_app_demo/data_model/graphql_base_model.dart';
 import 'package:json_annotation/json_annotation.dart';
-import '../../../data_model/graphql_base_error_model.dart';
 import 'cart_data_model.dart';
 part 'add_to_cart_model.g.dart';
 @JsonSerializable()
 class AddToCartModel extends BaseModel {
+  @override
   bool? status;
+  @override
   String? message;
   CartModel? cart;
   AddToCartModel({this.status, this.message, this.cart});

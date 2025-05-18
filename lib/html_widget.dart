@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart' as html;
 
-class HtmlWidget extends StatelessWidget{
+class HtmlWidget extends StatelessWidget {
   final String s;
-  const HtmlWidget(this.s, {super.key});
+  final html.CustomStylesBuilder? customStylesBuilder;
+
+  const HtmlWidget(this.s, {super.key, this.customStylesBuilder});
 
   @override
   Widget build(BuildContext context) {
-    return Text(s);
+    return html.HtmlWidget(
+      s,
+      customStylesBuilder: customStylesBuilder,
+    );
   }
 }

@@ -4,7 +4,7 @@
 import 'package:bagisto_app_demo/screens/order_refund/utils/index.dart';
 class OrderRefundScreen extends StatefulWidget {
   final OrderDetail? orderDetailsModel;
-  const OrderRefundScreen({this.orderDetailsModel, Key? key}) : super(key: key);
+  const OrderRefundScreen({this.orderDetailsModel, super.key});
 
   @override
   State<OrderRefundScreen> createState() => _OrderRefundScreenState();

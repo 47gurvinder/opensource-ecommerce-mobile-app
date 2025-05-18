@@ -16,7 +16,7 @@ import '../widgets/news_letter_checkbox.dart';
 class SignUpScreen extends StatefulWidget {
   final bool? addShopSlug;
 
-  const SignUpScreen({Key? key, this.addShopSlug}) : super(key: key);
+  const SignUpScreen({super.key, this.addShopSlug});
 
   @override
   State<SignUpScreen> createState() => _SignUpScreenState();
@@ -239,7 +239,7 @@ class _SignUpScreenState extends State<SignUpScreen> with EmailValidator {
                 NewsLetterCheckbox(
                       (value) {
                         isNewsLetterSelected = value;
-                        print("isNewsLetterSelectedisNewsLetterSelected--${isNewsLetterSelected}");
+                        print("isNewsLetterSelectedisNewsLetterSelected--$isNewsLetterSelected");
                        // GlobalData.subscribeNewsLetter = isNewsLetterSelected;
                   },
                  "",

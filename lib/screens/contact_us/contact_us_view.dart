@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
 
-import '../../utils/app_constants.dart';
-import '../../utils/string_constants.dart';
-import '../../widgets/common_date_picker.dart';
 import 'package:bagisto_app_demo/screens/account/utils/index.dart';
 
 import 'bloc/contact_us_bloc.dart';
@@ -219,7 +215,7 @@ class _ContactUsPageState extends State<ContactUsPage> with EmailValidator {
           elevation: 2.0,
           height: AppSizes.buttonHeight,
           minWidth: MediaQuery.of(context).size.width,
-          color: Theme.of(context).colorScheme.onBackground,
+          color: Theme.of(context).colorScheme.onSurface,
           onPressed: () {
             _submitForm();
           },

@@ -25,12 +25,11 @@ class CheckoutOrderReviewView extends StatefulWidget {
    CartModel? cartDetailsModel;
 
    CheckoutOrderReviewView(
-      {Key? key,
+      {super.key,
       this.paymentId,
       this.callBack,
       this.cartDetailsModel,
-      this.cartScreenBloc})
-      : super(key: key);
+      this.cartScreenBloc});
 
   @override
   State<CheckoutOrderReviewView> createState() =>

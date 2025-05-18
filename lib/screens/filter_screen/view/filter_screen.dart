@@ -1,17 +1,15 @@
 
 
-import 'package:bagisto_app_demo/screens/drawer/utils/index.dart';
 import 'package:bagisto_app_demo/screens/filter_screen/utils/index.dart';
 
 class SubCategoriesFilterScreen extends StatefulWidget {
   const SubCategoriesFilterScreen(
-      {Key? key,
+      {super.key,
         this.categorySlug,
         this.page,
         this.subCategoryBloc,
         this.data,
-        this.superAttributes, required this.filters})
-      : super(key: key);
+        this.superAttributes, required this.filters});
 
   final List<Map<String, dynamic>> filters;
   final GetFilterAttribute? data;

@@ -1,15 +1,3 @@
-
-
-/*
- *   Webkul Software.
- *   @package Mobikul Application Code.
- *   @Category Mobikul
- *   @author Webkul <support@webkul.com>
- *   @Copyright (c) Webkul Software Private Limited (https://webkul.com)
- *   @license https://store.webkul.com/license.html
- *   @link https://store.webkul.com/license.html
- */
-
 // Application Specific Constants
 const int defaultSplashDelay = 3;
 
@@ -30,7 +18,7 @@ const String defaultCurrencyName = "Indian Rupee";
 const String defaultAppTitle = "PetShop";
 
 ///default channel name
-const String defaultChannelName = "com.webkul.bagisto_mobikul/channel";
+const String defaultChannelName = "com.gurwinderdevx.bagisto/channel";
 
 const String demoEmail = "admin@example.com";
 /*email:admin@example.com

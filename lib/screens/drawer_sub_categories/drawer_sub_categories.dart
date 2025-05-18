@@ -25,14 +25,13 @@ class DrawerSubCategoryView extends StatefulWidget {
   final String? parentId;
 
   const DrawerSubCategoryView(
-      {Key? key,
+      {super.key,
       this.title,
       this.id,
       this.image,
       this.categorySlug,
       this.metaDescription,
-      this.parentId})
-      : super(key: key);
+      this.parentId});
 
   @override
   State<DrawerSubCategoryView> createState() => _DrawerSubCategoryViewState();
@@ -229,7 +228,7 @@ class _DrawerSubCategoryViewState extends State<DrawerSubCategoryView> {
                                   }
                                 },
                               ))
-                                  .toList(),
+                                  ,
                             ],
                           ),
                         ),
@@ -280,7 +279,7 @@ class _DrawerSubCategoryViewState extends State<DrawerSubCategoryView> {
                                           parentId: parent.id.toString()));
                                 },
                               ))
-                                  .toList()
+                                  
                             ],
                           ),
                         )

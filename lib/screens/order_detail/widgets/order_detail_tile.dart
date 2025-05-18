@@ -8,7 +8,6 @@
  *   @link https://store.webkul.com/license.html
  */
 
-import 'package:bagisto_app_demo/screens/account/utils/index.dart';
 import 'package:bagisto_app_demo/screens/order_detail/utils/index.dart';
 import 'package:bagisto_app_demo/screens/order_detail/widgets/shipping_payment_info.dart';
 
@@ -24,8 +23,7 @@ class OrderDetailTile extends StatelessWidget with OrderStatusBGColorHelper {
       this.orderId,
       this.orderDetailBloc,
       this.isLoading,
-      Key? key})
-      : super(key: key);
+      super.key});
 
   @override
   Widget build(BuildContext context) {

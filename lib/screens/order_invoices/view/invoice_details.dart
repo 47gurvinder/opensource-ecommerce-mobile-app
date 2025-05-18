@@ -13,7 +13,7 @@ import 'package:bagisto_app_demo/screens/order_invoices/utils/index.dart';
 
 class InvoiceScreen extends StatefulWidget {
   final OrderDetail? orderDetailsModel;
-  const InvoiceScreen({this.orderDetailsModel, Key? key}) : super(key: key);
+  const InvoiceScreen({this.orderDetailsModel, super.key});
 
   @override
   State<InvoiceScreen> createState() => _InvoiceScreenState();

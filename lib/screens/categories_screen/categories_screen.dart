@@ -22,12 +22,11 @@ class SubCategoryScreen extends StatefulWidget {
   final String? metaDescription;
 
   const SubCategoryScreen(
-      {Key? key,
+      {super.key,
       this.title,
       this.image,
       this.categorySlug,
-      this.metaDescription, this.id})
-      : super(key: key);
+      this.metaDescription, this.id});
 
   @override
   State<SubCategoryScreen> createState() => _SubCategoryScreenState();

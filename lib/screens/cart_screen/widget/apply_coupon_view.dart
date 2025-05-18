@@ -18,7 +18,7 @@ class ApplyCouponView extends StatefulWidget {
 
 
 
-  const ApplyCouponView({Key? key, this.cartDetailsModel, this.cartScreenBloc,required this.discountController}) : super(key: key);
+  const ApplyCouponView({super.key, this.cartDetailsModel, this.cartScreenBloc,required this.discountController});
 
   @override
   State<ApplyCouponView> createState() => _ApplyCouponViewState();

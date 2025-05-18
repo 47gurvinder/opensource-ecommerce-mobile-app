@@ -1,0 +1,2 @@
+/Users/jerry/personal/santosh/ecommerce_flutter/petshop_flutter/android/app/.cxx/Debug/2u4x6d49/x86_64/CMakeFiles/edit_cache.dir
+/Users/jerry/personal/santosh/ecommerce_flutter/petshop_flutter/android/app/.cxx/Debug/2u4x6d49/x86_64/CMakeFiles/rebuild_cache.dir

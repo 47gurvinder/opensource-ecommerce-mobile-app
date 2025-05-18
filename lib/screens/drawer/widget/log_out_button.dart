@@ -17,8 +17,7 @@ import 'package:bagisto_app_demo/screens/drawer/utils/index.dart';
 class LogoutButton extends StatefulWidget {
   AccountInfoModel? customerDetails;
   final dynamic fetchSharedPreferenceData;
-  LogoutButton({Key? key, this.customerDetails, this.fetchSharedPreferenceData})
-      : super(key: key);
+  LogoutButton({super.key, this.customerDetails, this.fetchSharedPreferenceData});
 
   @override
   State<LogoutButton> createState() => _LogoutButtonState();

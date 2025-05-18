@@ -24,12 +24,11 @@ class CheckoutPaymentView extends StatefulWidget {
   PaymentMethods? paymentMethods;
 
    CheckoutPaymentView(
-      {Key? key,
+      {super.key,
       this.total,
       this.shippingId,
       this.callBack,
-      this.priceCallback, this.paymentMethods})
-      : super(key: key);
+      this.priceCallback, this.paymentMethods});
 
   @override
   State<CheckoutPaymentView> createState() => _CheckoutPaymentViewState();

@@ -1,16 +1,6 @@
-<!--
-  ~   Webkul Software.
-  ~   @package Mobikul Application Code.
-  ~   @Category Mobikul
-  ~   @author Webkul <support@webkul.com>
-  ~   @Copyright (c) Webkul Software Private Limited (https://webkul.com)
-  ~   @license https://store.webkul.com/license.html
-  ~   @link https://store.webkul.com/license.html
-  -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="webkul.bagisto_app_demo">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -104,7 +94,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.webkul.bagisto.mobikul.provider"
+            android:authorities="com.gurwinderdevx.bagisto.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

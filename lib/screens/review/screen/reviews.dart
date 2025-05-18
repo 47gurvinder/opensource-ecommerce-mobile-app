@@ -14,7 +14,7 @@ import 'package:bagisto_app_demo/screens/review/utils/index.dart';
 
 
 class ReviewsScreen extends StatefulWidget {
-  const ReviewsScreen({Key? key, this.isFromDashboard}) : super(key: key);
+  const ReviewsScreen({super.key, this.isFromDashboard});
  final  bool? isFromDashboard;
 
   @override

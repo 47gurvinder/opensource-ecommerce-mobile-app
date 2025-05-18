@@ -15,8 +15,7 @@ class ButtonView extends StatelessWidget {
   final CartScreenBloc? cartScreenBloc;
   final List<Map<dynamic, String>> selectedItems;
 
-  const ButtonView({Key? key, this.cartScreenBloc, required this.selectedItems})
-      : super(key: key);
+  const ButtonView({super.key, this.cartScreenBloc, required this.selectedItems});
 
   @override
   Widget build(BuildContext context) {

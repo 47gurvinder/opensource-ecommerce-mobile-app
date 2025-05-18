@@ -19,8 +19,7 @@ class AddNewAddress extends StatefulWidget {
   final bool? isCheckout;
 
   const AddNewAddress(this.isEdit, this.addressModel,
-      {Key? key, this.isCheckout = false})
-      : super(key: key);
+      {super.key, this.isCheckout = false});
 
   @override
   State<AddNewAddress> createState() => _AddNewAddressState();

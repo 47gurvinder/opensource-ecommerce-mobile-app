@@ -16,8 +16,7 @@ class AddReview extends StatefulWidget {
  final String? productId;
  final String? productName;
 
-  const AddReview({Key? key, this.imageUrl, this.productId, this.productName})
-      : super(key: key);
+  const AddReview({super.key, this.imageUrl, this.productId, this.productName});
 
   @override
   State<AddReview> createState() => _AddReviewState();

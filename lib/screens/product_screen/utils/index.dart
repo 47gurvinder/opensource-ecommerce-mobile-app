@@ -37,7 +37,6 @@ export 'package:bagisto_app_demo/screens/cart_screen/cart_model/add_to_cart_mode
 export 'package:bagisto_app_demo/screens/recent_product/utils/recent_view_controller.dart';
 export 'package:bagisto_app_demo/utils/badge_helper.dart';
 export 'package:bagisto_app_demo/utils/check_internet_connection.dart';
-export 'package:flutter_share/flutter_share.dart';
 export 'package:collection/collection.dart';
 export 'package:bagisto_app_demo/data_model/app_route_arguments.dart';
 export 'package:bagisto_app_demo/screens/product_screen/view/widget/rating_bar.dart';

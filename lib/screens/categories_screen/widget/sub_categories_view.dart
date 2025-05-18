@@ -12,9 +12,7 @@
 
 
 
-import 'package:bagisto_app_demo/screens/cart_screen/utils/cart_index.dart';
 import 'package:bagisto_app_demo/screens/categories_screen/utils/index.dart';
-import 'package:bagisto_app_demo/screens/drawer/utils/index.dart';
 
 import '../../../utils/prefetching_helper.dart';
 
@@ -47,8 +45,7 @@ class SubCategoriesView extends StatefulWidget {
       this.categoriesData,
       this.isLoggedIn,
       this.data, this.filters, this.isPreCatching,
-      {Key? key})
-      : super(key: key);
+      {super.key});
 
   @override
   State<SubCategoriesView> createState() => _SubCategoriesViewState();

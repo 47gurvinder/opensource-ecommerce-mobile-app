@@ -121,11 +121,11 @@ class CommonWidgets with EmailValidator {
           {bool showIcon = false}) =>
       ElevatedButton(
         style: ButtonStyle(
-          maximumSize: MaterialStateProperty.all(Size(buttonWidth, 60)),
-          backgroundColor: MaterialStateProperty.all<Color>(
-            Theme.of(context).colorScheme.onBackground,
+          maximumSize: WidgetStateProperty.all(Size(buttonWidth, 60)),
+          backgroundColor: WidgetStateProperty.all<Color>(
+            Theme.of(context).colorScheme.onSurface,
           ),
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(AppSizes.spacingMedium),
             ),
@@ -189,7 +189,7 @@ class CommonWidgets with EmailValidator {
         const SizedBox(height: 6),
         Theme(
           data: Theme.of(context).copyWith(
-            canvasColor: Theme.of(context).colorScheme.background,
+            canvasColor: Theme.of(context).colorScheme.surface,
           ),
           child: DropdownButtonFormField(
             style: Theme.of(context).textTheme.bodyMedium,
@@ -225,7 +225,7 @@ class CommonWidgets with EmailValidator {
               fillColor: Colors.black,
               focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Theme.of(context).colorScheme.onBackground,
+                    color: Theme.of(context).colorScheme.onSurface,
                     width: 1,
                   ),
                   borderRadius: const BorderRadius.all(

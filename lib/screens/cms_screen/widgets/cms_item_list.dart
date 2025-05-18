@@ -10,7 +10,6 @@
 
 import 'package:bagisto_app_demo/utils/app_constants.dart';
 import 'package:bagisto_app_demo/utils/route_constants.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../../data_model/app_route_arguments.dart';
 import '../../../utils/app_global_data.dart';
@@ -25,7 +24,7 @@ class CmsItemsList extends StatefulWidget {
   final String? title;
   final CmsData? cmsData;
 
-  const CmsItemsList({Key? key, this.title, this.cmsData}) : super(key: key);
+  const CmsItemsList({super.key, this.title, this.cmsData});
 
   @override
   State<CmsItemsList> createState() => _CmsItemsListState();

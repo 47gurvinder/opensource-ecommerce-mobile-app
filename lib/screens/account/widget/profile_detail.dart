@@ -18,7 +18,7 @@ class ProfileDetailView extends StatefulWidget {
   final ValueChanged<bool>? onChanged;
  final GlobalKey<FormState> formKey;
  final bool? subsNewsLetter;
-  const ProfileDetailView({Key? key, required this.formKey,this.subsNewsLetter,this.onChanged}) : super(key: key);
+  const ProfileDetailView({super.key, required this.formKey,this.subsNewsLetter,this.onChanged});
 
   @override
   State<ProfileDetailView> createState() => _ProfileDetailViewState();

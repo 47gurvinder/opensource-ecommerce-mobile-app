@@ -4,7 +4,7 @@ import 'package:bagisto_app_demo/screens/order_shipping/utils/index.dart';
 
 class OrderShipmentsScreen extends StatefulWidget {
   final OrderDetail? orderDetailsModel;
-  const OrderShipmentsScreen({this.orderDetailsModel, Key? key}) : super(key: key);
+  const OrderShipmentsScreen({this.orderDetailsModel, super.key});
 
   @override
   State<OrderShipmentsScreen> createState() => _OrderShipmentsScreenState();

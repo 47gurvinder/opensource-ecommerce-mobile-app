@@ -14,7 +14,6 @@
 // ignore_for_file: file_names, prefer_typing_uninitialized_variables
 import 'package:bagisto_app_demo/data_model/graphql_base_model.dart';
 import 'package:json_annotation/json_annotation.dart';
-import '../../../data_model/graphql_base_error_model.dart';
 
 
 part 'add_review_model.g.dart';

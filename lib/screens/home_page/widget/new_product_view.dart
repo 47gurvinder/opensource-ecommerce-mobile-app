@@ -37,9 +37,8 @@ class NewProductView extends StatefulWidget {
   final bool callPreCache;
 
   const NewProductView(
-      {Key? key, this.model, required this.title, this.isLogin, this.isRecentProduct = false,
-      this.callPreCache = false})
-      : super(key: key);
+      {super.key, this.model, required this.title, this.isLogin, this.isRecentProduct = false,
+      this.callPreCache = false});
 
   @override
   State<NewProductView> createState() => _NewProductViewState();

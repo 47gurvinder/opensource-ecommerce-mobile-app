@@ -25,7 +25,7 @@ class DrawerListView extends StatefulWidget {
   final Function? loginCallback;
 
   DrawerListView({
-    Key? key,
+    super.key,
     required this.isLoggedIn,
     required this.customerUserName,
     required this.image,
@@ -34,7 +34,7 @@ class DrawerListView extends StatefulWidget {
     required this.customerCurrency,
     this.customerDetails,
     this.loginCallback
-  }) : super(key: key);
+  });
 
   @override
   State<DrawerListView> createState() => _DrawerListViewState();

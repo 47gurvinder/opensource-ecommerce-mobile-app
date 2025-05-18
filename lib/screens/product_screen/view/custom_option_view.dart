@@ -19,12 +19,11 @@ class CustomOptionsView extends StatefulWidget {
   final NewProducts? productData;
 
   const CustomOptionsView(
-      {Key? key,
+      {super.key,
       this.productData,
       this.customOptions,
       this.variants,
-      this.callback})
-      : super(key: key);
+      this.callback});
 
   @override
   State<StatefulWidget> createState() {

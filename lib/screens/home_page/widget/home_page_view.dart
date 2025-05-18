@@ -26,8 +26,8 @@ class HomePageView extends StatefulWidget {
     this.isLogin,
     this.homePageBloc,
     this.callPreCache, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<HomePageView> createState() => _HomePageViewState();

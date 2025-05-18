@@ -9,14 +9,10 @@
  */
 
 import 'dart:async';
-import 'dart:io';
 
 import 'package:bagisto_app_demo/screens/account/utils/index.dart';
-import 'package:bagisto_app_demo/utils/application_localization.dart';
-import 'package:bagisto_app_demo/utils/string_constants.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
@@ -25,7 +21,6 @@ import '../screens/home_page/data_model/new_product_data.dart';
 
 import '../screens/product_screen/bloc/product_page_bloc.dart';
 import '../screens/product_screen/bloc/product_page_event.dart';
-import '../screens/product_screen/view/file_download.dart';
 
 class CheckboxGroup extends StatefulWidget {
   final List<String>? labels;
@@ -43,8 +38,8 @@ class CheckboxGroup extends StatefulWidget {
   final bool showText;
   final GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey;
 
-  CheckboxGroup({
-    Key? key,
+  const CheckboxGroup({
+    super.key,
     required this.labels,
     this.checked,
     this.onChange,
@@ -56,7 +51,7 @@ class CheckboxGroup extends StatefulWidget {
     this.padding = const EdgeInsets.all(0.0),
     this.margin = const EdgeInsets.all(0.0),
     this.data, this.showText = false, this.scaffoldMessengerKey
-  }) : super(key: key);
+  });
 
   @override
   State<CheckboxGroup> createState() => _CheckboxGroupState();
@@ -90,8 +85,8 @@ class _CheckboxGroupState extends State<CheckboxGroup> {
       Checkbox checkBox = Checkbox(
         value: _selected.contains(widget.labels?.elementAt(label)),
         onChanged: (bool? isChecked) => onChanged(isChecked ?? false, label),
-        checkColor: Theme.of(context).colorScheme.background,
-        activeColor: Theme.of(context).colorScheme.onBackground,
+        checkColor: Theme.of(context).colorScheme.surface,
+        activeColor: Theme.of(context).colorScheme.onSurface,
         tristate: widget.triState,
       );
 

@@ -14,7 +14,7 @@ import 'package:bagisto_app_demo/screens/categories_screen/utils/index.dart';
 
 
 class AddressScreen extends StatefulWidget {
-  const AddressScreen({Key? key, this.isFromDashboard}) : super(key: key);
+  const AddressScreen({super.key, this.isFromDashboard});
   final bool? isFromDashboard;
 
   @override

@@ -14,7 +14,7 @@ import  'package:bagisto_app_demo/html_widget.dart';
 
 class PriceWidgetHtml extends StatelessWidget {
   final String priceHtml;
-  const PriceWidgetHtml({Key? key, required this.priceHtml}) : super(key: key);
+  const PriceWidgetHtml({super.key, required this.priceHtml});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class PriceWidgetHtml extends StatelessWidget {
       padding: const EdgeInsets.all(AppSizes.spacingNormal),
       child: HtmlWidget(
         priceHtml,
-      /*  customStylesBuilder: (element) {
+        customStylesBuilder: (element) {
           if (element.classes.contains('line-through')) {
             return {'text-decoration': 'line-through'};
           }
@@ -42,7 +42,7 @@ class PriceWidgetHtml extends StatelessWidget {
             return {'flex' : '1'};
           }
           return null;
-        },*/
+        },
       ),
     );
   }

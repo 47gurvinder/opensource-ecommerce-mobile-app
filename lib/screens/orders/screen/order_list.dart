@@ -14,7 +14,7 @@ import 'package:bagisto_app_demo/screens/orders/utils/index.dart';
 import 'package:bagisto_app_demo/utils/prefetching_helper.dart';
 
 class OrdersList extends StatefulWidget {
-  const OrdersList({Key? key, this.isFromDashboard}) : super(key: key);
+  const OrdersList({super.key, this.isFromDashboard});
   final bool? isFromDashboard;
 
   @override

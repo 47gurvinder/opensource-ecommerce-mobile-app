@@ -13,7 +13,7 @@
 import 'package:bagisto_app_demo/screens/compare/utils/index.dart';
 
 class CompareScreen extends StatefulWidget {
-  const CompareScreen({Key? key}) : super(key: key);
+  const CompareScreen({super.key});
 
   @override
   State<CompareScreen> createState() => _CompareScreenState();

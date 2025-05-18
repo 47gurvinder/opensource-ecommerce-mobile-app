@@ -15,7 +15,7 @@ import '../../data_model/save_order_model.dart';
 
 
 class CheckOutSaveOrder extends StatefulWidget {
-  const CheckOutSaveOrder({Key? key}) : super(key: key);
+  const CheckOutSaveOrder({super.key});
 
   @override
   State<CheckOutSaveOrder> createState() => _CheckOutSaveOrderState();

@@ -12,28 +12,18 @@
 
 import 'dart:io';
 import 'package:bagisto_app_demo/screens/home_page/data_model/get_categories_drawer_data_model.dart';
-import 'package:bagisto_app_demo/screens/home_page/data_model/new_product_data.dart';
 import 'package:bagisto_app_demo/screens/product_screen/utils/index.dart';
-import 'package:bagisto_app_demo/utils/app_global_data.dart';
 import 'package:bagisto_app_demo/utils/app_navigation.dart';
-import 'package:bagisto_app_demo/utils/application_localization.dart';
-import 'package:bagisto_app_demo/utils/mobikul_theme.dart';
 import 'package:bagisto_app_demo/utils/push_notifications_manager.dart';
-import 'package:bagisto_app_demo/utils/route_constants.dart';
-import 'package:bagisto_app_demo/utils/server_configuration.dart';
-import 'package:bagisto_app_demo/utils/shared_preference_helper.dart';
 import 'package:bagisto_app_demo/utils/theme_provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:hive/hive.dart';
 import 'package:overlay_support/overlay_support.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'data_model/product_model/product_screen_model.dart';
 
@@ -92,7 +82,7 @@ Future<void> hiveRegisterAdapter() async {
 }
 
 class RestartWidget extends StatefulWidget {
-  const RestartWidget({Key? key, required this.child}) : super(key: key);
+  const RestartWidget({super.key, required this.child});
   final Widget child;
   static restartApp(BuildContext context) {
     context.findAncestorStateOfType<_RestartWidgetState>()?.restartApp();
@@ -123,7 +113,7 @@ class _RestartWidgetState extends State<RestartWidget> {
 
 class BagistoApp extends StatefulWidget {
   const BagistoApp(
-    this.selectedLanguage, {Key? key,}) : super(key: key);
+    this.selectedLanguage, {super.key,});
 
   final String? selectedLanguage;
   @override

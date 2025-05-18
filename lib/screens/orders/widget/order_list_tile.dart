@@ -16,7 +16,7 @@ class OrdersListTile extends StatelessWidget with OrderStatusBGColorHelper {
 
   String capitalize(String str) => str[0].toUpperCase() + str.substring(1);
 
-  OrdersListTile({Key? key, this.data, this.reload}) : super(key: key);
+  OrdersListTile({super.key, this.data, this.reload});
 
   @override
   Widget build(BuildContext context) {

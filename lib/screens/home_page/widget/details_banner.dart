@@ -17,7 +17,7 @@ import  'package:bagisto_app_demo/html_widget.dart';
 class DetailsBannerView extends StatelessWidget {
   final String? title;
   final String? imgUrl;
-  const DetailsBannerView({Key? key, this.title, this.imgUrl}) : super(key: key);
+  const DetailsBannerView({super.key, this.title, this.imgUrl});
 
   @override
   Widget build(BuildContext context) {

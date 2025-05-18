@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 
 class BadgeIcon extends StatelessWidget {
   const BadgeIcon(
-      {Key? key,
+      {super.key,
         this.icon,
         this.height=15,
         this.width=15,
@@ -26,8 +26,7 @@ class BadgeIcon extends StatelessWidget {
       const TextStyle(
         color: Colors.white,
         fontSize: 8,
-      ),
-        super(key: key);
+      );
   final Widget? icon;
   final int badgeCount;
   final double  height;

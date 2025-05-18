@@ -66,9 +66,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:597552226522:android:db22cb35fab77809a4c5e3",
+        "mobilesdk_app_id": "1:597552226522:android:a4625fdd4f96c5a9a4c5e3",
         "android_client_info": {
-          "package_name": "com.skyit.komet_app"
+          "package_name": "com.gurwinderdevx.bagisto"
         }
       },
       "oauth_client": [
@@ -95,9 +95,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:597552226522:android:602b7d8aafe143a8a4c5e3",
+        "mobilesdk_app_id": "1:597552226522:android:db22cb35fab77809a4c5e3",
         "android_client_info": {
-          "package_name": "com.webkul.bagisto.mobikul"
+          "package_name": "com.skyit.komet_app"
         }
       },
       "oauth_client": [

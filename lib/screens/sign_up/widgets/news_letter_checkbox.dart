@@ -1,6 +1,4 @@
 import 'package:bagisto_app_demo/screens/account/utils/index.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 
 
@@ -11,8 +9,7 @@ class NewsLetterCheckbox extends StatefulWidget {
   final bool? initialSelection;
 
   const NewsLetterCheckbox(this.isCheckboxSelected, this.title,this.isFromSignUp,this.initialSelection,
-      {Key? key})
-      : super(key: key);
+      {super.key});
 
   @override
   State<StatefulWidget> createState() {

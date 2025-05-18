@@ -36,7 +36,7 @@ class CheckoutAddressView extends StatefulWidget {
       AddressType addressType, bool isShippingSame
       )? callBack;
 
-  const CheckoutAddressView({Key? key, this.callBack}) : super(key: key);
+  const CheckoutAddressView({super.key, this.callBack});
 
   @override
   State<CheckoutAddressView> createState() => _CheckoutAddressViewState();
@@ -205,7 +205,7 @@ class _CheckoutAddressViewState extends State<CheckoutAddressView> {
   }
 
   void callAddressCallback() {
-    print("vrgeg ${type}");
+    print("vrgeg $type");
     if (widget.callBack != null) {
       widget.callBack!(
           billingAddress?.companyName,

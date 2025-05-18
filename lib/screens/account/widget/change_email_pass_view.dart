@@ -13,7 +13,7 @@ import 'package:flutter/cupertino.dart';
 import '../utils/index.dart';
 
 class ChangeEmailAndPassword extends StatefulWidget {
-  const ChangeEmailAndPassword({Key? key}) : super(key: key);
+  const ChangeEmailAndPassword({super.key});
 
   @override
   State<ChangeEmailAndPassword> createState() => _ChangeEmailAndPasswordState();

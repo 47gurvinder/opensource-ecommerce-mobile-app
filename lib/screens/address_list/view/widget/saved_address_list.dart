@@ -16,8 +16,8 @@ class SavedAddressList extends StatelessWidget {
   final VoidCallback? reload;
   final bool isFromDashboard;
   final AddressBloc? addressBloc;
-  const SavedAddressList({Key? key, this.addressModel, this.reload, this.isFromDashboard = false,
-    this.addressBloc}) : super(key: key);
+  const SavedAddressList({super.key, this.addressModel, this.reload, this.isFromDashboard = false,
+    this.addressBloc});
 
   @override
   Widget build(BuildContext context) {

@@ -19,12 +19,11 @@ class CartListItem extends StatelessWidget {
   final Function(bool quantityChanged)? callBack;
 
   const CartListItem(
-      {Key? key,
+      {super.key,
       required this.cartDetailsModel,
       this.cartScreenBloc,
       required this.selectedItems,
-      this.callBack})
-      : super(key: key);
+      this.callBack});
 
   @override
   Widget build(BuildContext context) {

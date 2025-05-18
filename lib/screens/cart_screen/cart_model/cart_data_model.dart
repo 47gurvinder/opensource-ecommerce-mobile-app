@@ -12,7 +12,6 @@
 import 'package:json_annotation/json_annotation.dart';
 import '../../../data_model/graphql_base_model.dart';
 import '../../../data_model/order_model/order_detail_model.dart';
-import '../../../data_model/product_model/product_screen_model.dart';
 import '../../product_screen/data_model/product_details_model.dart';
 part 'cart_data_model.g.dart';
 

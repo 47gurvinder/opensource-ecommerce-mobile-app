@@ -12,7 +12,7 @@ import 'dart:io';
 import 'package:bagisto_app_demo/screens/product_screen/utils/index.dart';
 
 class NoInternetError extends StatelessWidget {
-  const NoInternetError({Key? key}) : super(key: key);
+  const NoInternetError({super.key});
 
   @override
   Widget build(BuildContext context) {

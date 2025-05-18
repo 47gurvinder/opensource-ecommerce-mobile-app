@@ -14,7 +14,7 @@ import 'package:bagisto_app_demo/screens/sign_in/utils/index.dart';
 import '../../../utils/server_configuration.dart';
 
 class SignInScreen extends StatefulWidget {
-  const SignInScreen({Key? key}) : super(key: key);
+  const SignInScreen({super.key});
 
   @override
   State<SignInScreen> createState() => _SignInScreenState();

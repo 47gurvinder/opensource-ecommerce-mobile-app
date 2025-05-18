@@ -11,7 +11,7 @@
 import 'package:bagisto_app_demo/screens/wishList/utils/index.dart';
 
 class WishListScreen extends StatefulWidget {
-  const WishListScreen({Key? key}) : super(key: key);
+  const WishListScreen({super.key});
 
   @override
   State<WishListScreen> createState() => _WishListScreenState();

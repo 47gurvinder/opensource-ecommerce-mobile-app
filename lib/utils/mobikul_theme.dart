@@ -62,11 +62,11 @@ class MobiKulTheme {
         primary: _lightPrimaryColor,
         secondary: primaryColor,
         secondaryContainer: _lightPrimaryVariantColor,
-        onBackground: MobiKulTheme.accentColor,
+        onSurface: MobiKulTheme.accentColor,
         onPrimary: Colors.black,
       ),
       checkboxTheme: CheckboxThemeData(
-        side: MaterialStateBorderSide.resolveWith((states) => const BorderSide(color: accentColor)),
+        side: WidgetStateBorderSide.resolveWith((states) => const BorderSide(color: accentColor)),
       ),
       iconTheme: const IconThemeData(
         color: _lightOnPrimaryColor,
@@ -163,15 +163,15 @@ class MobiKulTheme {
           fontWeight: FontWeight.bold),
       ),
       checkboxTheme: CheckboxThemeData(
-        side: MaterialStateBorderSide.resolveWith((states) => const BorderSide(color: _darkOnPrimaryColor)),
+        side: WidgetStateBorderSide.resolveWith((states) => const BorderSide(color: _darkOnPrimaryColor)),
       ),
       colorScheme: const ColorScheme.dark(
         primary: _darkPrimaryColor,
         secondary: accentColor,
         secondaryContainer: _darkPrimaryVariantColor,
         onPrimary: Colors.white,
-        onBackground:_darkOnPrimaryColor,
-        background: Colors.black,
+        onSurface:_darkOnPrimaryColor,
+        surface: Colors.black,
       ),
       iconTheme: const IconThemeData(
         color: _darkOnPrimaryColor,

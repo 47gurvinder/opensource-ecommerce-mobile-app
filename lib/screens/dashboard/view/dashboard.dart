@@ -11,7 +11,7 @@
 import 'package:bagisto_app_demo/screens/dashboard/utils/index.dart';
 
 class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({Key? key}) : super(key: key);
+  const DashboardScreen({super.key});
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();

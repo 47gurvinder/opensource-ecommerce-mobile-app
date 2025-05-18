@@ -46,14 +46,13 @@ class BillingAndShippingAddressView extends StatefulWidget {
       String? shippingPhone, int billingId, int shippingId, AddressType addressType,
       bool isShippingSame)? callBack;
   BillingAndShippingAddressView(
-      {Key? key,
+      {super.key,
       this.address,
       this.addressModel,
       this.title,
       this.callBack,
       this.shippingAddress,
-      this.billingAddress, required this.addressSetCallback, this.isShippingSame = false})
-      : super(key: key);
+      this.billingAddress, required this.addressSetCallback, this.isShippingSame = false});
 
   @override
   State<BillingAndShippingAddressView> createState() =>

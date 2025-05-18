@@ -17,12 +17,11 @@ class CheckoutScreen extends StatefulWidget {
  final  bool? isDownloadable;
  final  CartModel? cartDetailsModel;
   const CheckoutScreen(
-      {Key? key,
+      {super.key,
         this.total,
         this.cartScreenBloc,
         this.cartDetailsModel,
-        this.isDownloadable = false})
-      : super(key: key);
+        this.isDownloadable = false});
 
   @override
   State<CheckoutScreen> createState() => _CheckoutScreenState();

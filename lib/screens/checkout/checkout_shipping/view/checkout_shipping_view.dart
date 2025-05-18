@@ -47,7 +47,7 @@ class CheckoutShippingPageView extends StatefulWidget {
   Function(PaymentMethods)? paymentCallback;
 
   CheckoutShippingPageView(
-      {Key? key,
+      {super.key,
       this.billingCompanyName,
       this.billingFirstName,
       this.billingLastName,
@@ -71,8 +71,7 @@ class CheckoutShippingPageView extends StatefulWidget {
       this.shippingPostCode,
       this.shippingPhone,
       this.callBack, required this.shippingId, required this.billingId, this.isDownloadable = false,
-      this.callbackNavigate, this.paymentCallback, this.useForShipping})
-      : super(key: key);
+      this.callbackNavigate, this.paymentCallback, this.useForShipping});
 
   @override
   State<CheckoutShippingPageView> createState() =>
